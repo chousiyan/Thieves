@@ -1,0 +1,489 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.level-one {
+    align-self: center;
+    margin-left: 16%;
+    margin-right: 16%;
+    /* border: 1px solid white; */
+}
+
+.game-area {
+    /* margin-left: 6%; */
+    /*justify-self: center;*/
+    align-self: center;
+    /* border: 1px solid white; */
+    /* display: inline-block; */
+    float: left;
+}
+
+.utility {
+    width: 25%;
+    height: 600px;
+    /* border: 1px solid white; */
+    /* display: inline-block; */
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 12%;
+    position: relative;
+}
+
+.timer-area-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* border: 1px solid white; */
+}
+
+.control-tutorial-img {
+    width: 200px;
+    margin-top: 30%;
+    margin-bottom: 2%;
+}
+
+.interact-tutorial-img {
+    width: 30px;
+    margin-top: 30%;
+    margin-bottom: 2%;
+}
+
+.tutorial-02 {
+    display: none;
+    /* border: 1px solid white; */
+}
+
+.tutorial-text {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    /* margin-top:20px; */
+}
+
+.tutorial-text-emphasis {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 219, 36);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.timer {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.am {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.daybreak-time {
+    font-size: 20px;
+    margin-top: -4px;
+    /* margin-bottom:0; */
+}
+
+.txt-font {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/* Safe Box Popup */
+
+.close-button {
+    width: 24px;
+    position: absolute;
+    margin-left: 96%;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+.safe-box-popup {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    /* border: 1px solid white; */
+    justify-content: center;
+}
+
+.safe-box-img {
+    width: 50%;
+    display: block;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* input boxes*/
+.input-box-wrapper {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -25%;
+    /* border: 1px solid red; */
+    /* height: 194px; */
+    /* display: inline-block; */
+}
+
+.input-box {
+    display: inline-block;
+    margin-right: 6px;
+    width: 40px;
+    height: 40px;
+    background: #999999;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+/* numbers inside input boxes */
+.input-number {
+    text-align: center;
+    margin-top: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+/* keyboard */
+.keyboard-wrapper {
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 52%;
+    /* border: 1px solid yellow; */
+}
+
+.keyboard-row {
+    width: 194px;
+    /* border: 1px solid red; */
+    margin-bottom: 16px;
+}
+
+.keyboard {
+    display: inline-block;
+    margin-right: 8px;
+    width: 50px;
+    height: 40px;
+    background: #232323;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.keyboard:active {
+    background: #232323;
+    color: #BBBBBB;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.handle {
+    width: 174px;
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 36%;
+    cursor: pointer;
+}
+
+.handle:active {
+    transform: translate(-6px, 12px) rotate(15deg);
+}
+
+
+/* Success screen */
+
+.success-popup {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.92);
+    display: none;
+    /* border: 1px solid white; */
+}
+
+.money-fly {
+    display: inline-block;
+    width: 135px;
+    margin-top: 21%;
+    margin-left: 30%;
+}
+
+.score-wrapper {
+    position: absolute;
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: 22%;
+}
+
+.made-it {
+    font-size: 56px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.time-remaining {
+    margin-top: 3%;
+    font-size: 26px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+
+/* Fail success */
+
+.fail-popup {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.92);
+    display: none;
+    /* border: 1px solid white; */
+}
+
+.jail {
+    height: 138%;
+    margin-top: -12%;
+    margin-left: 3%;
+}
+
+.fail-text-locator {
+    position: absolute;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin-top: -66.5%;
+    /* border: 1px solid yellow; */
+}
+
+.fail-text-wrapper {
+    position: absolute;
+    margin-left: 4%;
+    /* margin-top: -44%; */
+    /* border: 1px solid red; */
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.oops {
+    font-size: 78px;
+    font-family: "Roboto",  sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 0;
+    /* border: 1px solid yellow; */
+    justify-self: center;
+}
+
+.you-are-caught {
+    margin-top: 4%;
+    font-size: 46px;
+    font-family: "Roboto",
+        sans-serif;
+    color: white;
+    font-weight: 500;
+    font-style: italic;
+    justify-self: center;
+}
+
+/* start game */
+.start-screen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    display: grid;
+    /* border: 1px solid yellow; */
+}
+
+.gradient {
+    position: absolute;
+    height: 120%;
+    justify-self: center;
+    margin-bottom: 0;
+}
+
+.start-screen-content {
+    position: absolute;
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.game-title {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    font-style: italic;
+    justify-self: center;
+    margin-top: 9%;
+}
+
+.start-button {
+    height: 66px;
+    width: 244px;
+    background: white;
+    border-radius: 33px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+    color: black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    justify-self: center;
+}
+
+.start-button:hover {
+    transform: translate(0, -2px);
+}
+
+.divider {
+    display: grid;
+}
+
+.lines {
+    justify-self: center;
+    align-self: center;
+}
+
+.earphones-div {
+    margin-top: -4%;
+    /* display:inline-grid; */
+    justify-self: center;
+    align-self: center;
+}
+
+.earphones {
+    height: 26px;
+    display: inline-grid;
+    align-self: center;
+}
+
+.earphone-text {
+    margin-left: 10px;
+    display: inline-grid;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: white;
+    opacity: 80%;
+    align-self: center;
+}
+
+.information-wrapper {
+    margin-left: 6%;
+}
+
+.information {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    color: white;
+}
+
+.pdf-link {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* tutorials */
+.tutorials {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -8px;
+    right: -8px;
+    background: black;
+    display: none;
+    /* border: 1px solid yellow; */
+}
+
+.tutorial-content {
+    position: absolute;
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.skip {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+    opacity: 70%;
+    text-decoration: underline;
+    margin-left: 94%;
+    margin-top: 20px;
+    font-weight: 500;
+    font-style: italic;
+    cursor: pointer;
+    text-align: right;
+    width: 46px;
+    height: 32px;
+}
+
+.tutorial-paragraph {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    justify-self: center;
+    margin-bottom: 0;
+    height: 35.5px;
+}
+
+.tutorial-img-01 {
+    margin-top: -40px;
+    height: 42%;
+    justify-self: center;
+}
+
+.two-buttons {
+    display: block;
+    height: 24%;
+    margin-bottom: 1%;
+}
+
+.next-button {
+    margin-left: 50.5%;
+    height: 100%;
+    cursor: pointer;
+}

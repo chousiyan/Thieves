@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>THIEVES</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="level-one">
+        <canvas class="game-area" id="game-area" width="600" height="600"></canvas>
+        <div class="utility">
+            <div id="tutorial-01" class="tutorial-01">
+                <img class="control-tutorial-img" src="assets/img/control_tutorial.png" alt="W/A/S/D control tutorial image">
+                <p>
+                    <label class="tutorial-text">
+                        Use
+                        <label class="tutorial-text-emphasis">
+                            W/A/S/D
+                        </label>
+                        on the keyboard to move
+                    </label>
+                </p>
+            </div>
+            <div id="tutorial-02" class="tutorial-02">
+                <img class="interact-tutorial-img" src="assets/img/cursor_click.png" alt="cursor click image">
+                <p>
+                    <label class="tutorial-text-emphasis">
+                        Click
+                        <label class="tutorial-text">
+                            on things to interact
+                        </label>
+                    </label>
+                </p>
+            </div>
+            <div class="timer-area-wrapper">
+                <p class="timer-area">
+                    <label id="timer" class="timer txt-font">1:00 </label>
+                    <label id="am" class="am txt-font"> am</label>
+                </p>
+                <p class="daybreak-time txt-font">
+                    Daybreak at 6:00 am
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="safe-box-popup" class="safe-box-popup">
+        <img id="close-button" class="close-button" src="assets/img/close_button.png" alt="close button">
+        <img class="safe-box-img" src="assets/img/safe_box.png" alt="safe box img">
+        <div class="input-box-wrapper">
+            <div class="input-box">
+                <p id="input-number-01" class="input-number">-
+                </p>
+            </div>
+            <div class="input-box">
+                <p id="input-number-02" class="input-number">-
+                </p>
+            </div>
+            <div class="input-box">
+                <p id="input-number-03" class="input-number">-
+                </p>
+            </div>
+            <div class="input-box">
+                <p id="input-number-04" class="input-number">-
+                </p>
+            </div>
+        </div>
+        <div class="keyboard-wrapper">
+            <div class="keyboard-row">
+                <button id="keyboard-01" class="keyboard">
+                    2
+                </button>
+                <button id="keyboard-02" class="keyboard">
+                    8
+                </button>
+                <button id="keyboard-03" class="keyboard">
+                    1
+                </button>
+            </div>
+            <div class="keyboard-row">
+                <button id="keyboard-04" class="keyboard">
+                    9
+                </button>
+                <button id="keyboard-05" class="keyboard">
+                    5
+                </button>
+                <button id="keyboard-06" class="keyboard">
+                    3
+                </button>
+            </div>
+            <div class="keyboard-row">
+                <button id="keyboard-07" class="keyboard">
+                    0
+                </button>
+                <button id="keyboard-08" class="keyboard">
+                    4
+                </button>
+                <button id="keyboard-09" class="keyboard">
+                    7
+                </button>
+            </div>
+            <div class="keyboard-row">
+                <button id="keyboard-10" class="keyboard">
+                    C
+                </button>
+                <button id="keyboard-11" class="keyboard">
+                    6
+                </button>
+                <button id="keyboard-12" class="keyboard">
+                    E
+                </button>
+            </div>
+        </div>
+        <img id="handle" class="handle" src="assets/img/handle.png" alt="safe box handle img">
+    </div>
+
+    <div id="success-popup" class="success-popup">
+        <img class="money-fly" src="assets/img/money_fly.png" alt="money fly">
+        <div class="score-wrapper">
+            <p class="made-it">You made it!
+            </p>
+            <p id="time-remaining" class="time-remaining">Time remaining: 2 hours 30 mins
+            </p>
+        </div>
+    </div>
+
+    <div id="fail-popup" class="fail-popup">
+        <img class="jail" src="assets/img/jail.png" alt="jail">
+        <div class="fail-text-locator">
+            <div class="fail-text-wrapper">
+                <p class="oops">Oops!
+                </p>
+                <p class="you-are-caught">You are caught
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="start-screen" class="start-screen">
+        <img class="gradient" src="assets/img/radial_gradient.png" alt="gradient">
+        <div class="start-screen-content">
+            <p class="game-title">THIEVES
+            </p>
+            <button id="start-button" class="start-button">
+                START GAME
+            </button>
+            <div class="divider">
+                <img class="lines" src="assets/img/lines.png" alt="lines">
+                <div class="earphones-div">
+                    <img class="earphones" src="assets/img/earphones.png" alt="earphones">
+                    <p class="earphone-text">Earphones Recommended
+                    </p>
+                </div>
+            </div>
+            <div class="information-wrapper">
+                <p class="information">2 players required
+                </p>
+                <p class="information">
+                    <a class="pdf-link" href="assets/img/thieves_manual.pdf" target="_blank">Map and Hacking Manual</a> required</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tutorials">
+        <img class="gradient" src="assets/img/radial_gradient.png" alt="gradient">
+        <div class="tutorial-content">
+            <label class="skip">SKIP</label>
+            <p class="tutorial-paragraph">This is a local multiplayer game for
+                two or more players.</P>
+            <img class="tutorial-img-01" src="assets/img/page01.png" alt="tutorial img 01">
+            <div class="two-buttons">
+                <img class="next-button" src="assets/img/next_button.png" alt="next button">
+            </div>
+        </div>
+
+
+        <script src="assets/js/utility.js"></script>
+        <script src="assets/js/key.js"></script>
+        <script src="assets/js/map.js"></script>
+        <script src="assets/js/guard.js"></script>
+        <script src="assets/js/player.js"></script>
+        <script src="assets/js/game.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/safe_box.js"></script>
+</body>
+</html>
